@@ -1,0 +1,368 @@
+[
+    {
+        "input": {
+            "location": "The scout hut is large brick building with a hard wooden floor.",
+            "activity": "Indoor active games.",
+            "n": 9
+        },
+        "output": {
+            "location": "Scout Hut",
+            "activity": "Indoor games",
+            "risks": [
+                {
+                    "hazard": "Walls and items attached to walls (eg radiators)",
+                    "risks": [
+                        "Collisions with walls causing injuries to people."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Mark a line on the floor about two metres before the walls at each end to show the safe zone. Explain the safe zone to players (for example, no one should run in the safe zone).",
+                        "Consider the height and position of permanent fixings to walls, can they be changed.",
+                        "Add additional safe zone marking around objects permanently fixed to walls where necessary."
+                    ]
+                },
+                {
+                    "hazard": "Tables and chairs (and other obstructions)",
+                    "risks": [
+                        "Collisions with obstacles.",
+                        "Tripping on tables and chairs them causing injuries to people."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Store chairs and tables safely out of the way if possible, or move them to a safe area when playing a game.",
+                        "Work with Patrol Leaders/ Young Leaders to organise moving items at the beginning of the game.",
+                        "Ensure everyone knows how to move heavy items safely."
+                    ]
+                },
+                {
+                    "hazard": "Floor",
+                    "risks": [
+                        "Slips",
+                        "Trips",
+                        "Falls"
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Check that the play area is clear of small objects, particles, and spills that could increase risk of tripping or slipping or cause injury if someone falls on them.",
+                        "Make sure that players are wearing appropriate footwear and it's secured to their feet (check laces are tied and so on)."
+                    ]
+                },
+                {
+                    "hazard": "Other players",
+                    "risks": [
+                        "Collisions",
+                        "Tripping up.",
+                        "Grabbing others or their clothing."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Explain the rules clearly at the start of the game each time it is played.",
+                        "Monitor the mood level throughout the game. Use a clear communication to stop the game - everyone should stop as soon as they hear two blasts on the whistle or anyone shouting stop.",
+                        "Have a clear, unobstructing location for those not participating in the game.",
+                        "Ensure all of section is adequately supervised, both those YP playing and those not."
+                    ]
+                },
+                {
+                    "hazard": "Windows and doors",
+                    "risks": [
+                        "collisions with windows and doors causing injuries to people."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Close all doors (including store cupboard) and windows where possible to make sure there aren’t any additional obstacles.",
+                        "Where windows or doors need to be left open (including for ventilation), they must be opened outwards not inwards."
+                    ]
+                },
+                {
+                    "hazard": "Equipment",
+                    "risks": [
+                        "Injury due to unsuitability.",
+                        "Poor repair."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Check any equipment is in good repair before each game.",
+                        "Store equipment safely while not in supervised use.",
+                        "Instruct young people on proper and acceptable use of equipment before each game."
+                    ]
+                },
+                {
+                    "hazard": "Accidents and Incidents",
+                    "risks": [
+                        "Poor management leading to detrimental effects, injuries"
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Designated First Aider, 1st aid kit regulalrly checked.",
+                        "Emergency medications to hand (eg Asthma inhaler).",
+                        "Game to be halted in order for injured/ill person to leave game safely."
+                    ]
+                },
+                {
+                    "hazard": "Individual Needs.",
+                    "risks": [
+                        "Exclusion",
+                        "Upset",
+                        "Injury."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "All abilities of group considered. Adjustments made to ensure everyone can join in if they choose.",
+                        "Safe area/additional activity or task for those who choose not to actively play.",
+                        "Individual support in place is necessary (eg. Ear defenders or an additional supporting adult)."
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "input": {
+            "location": "Large outdoor grassy space adjacent to a road and car park.",
+            "activity": "Outdoor active games aka wide games.",
+            "n": 5
+        },
+        "output": {
+            "location": "Outdoor grassy area",
+            "activity": "Outdoor 'wide' games'",
+            "risks": [
+                {
+                    "hazard": "Terrain",
+                    "risks": [
+                        "Injury",
+                        "Illness"
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Check that the play area is clear of small objects, particles, and animal faeces that could increase risk of tripping or slipping or cause injury if someone falls on them.",
+                        "Check the ground is safe (eg: not too wet or muddy). Halt the game if it becomes so during the game.",
+                        "Make sure that players are wearing appropriate footwear and it's secured to their feet (check laces are tied and so on).",
+                        "Leaders will encourage everyone to wear long trousers if there are concerns over foliage or ticks. If necessary, tick checks to be advised in writing to parents",
+                        "Leaders will brief young people on behaviour in the environment, including avoiding brambles, nettles, and so on."
+                    ]
+                },
+                {
+                    "hazard": "Fixed / immoveable objects",
+                    "risks": [
+                        "Collision injury"
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Playing zone to avoid/ mark out of bounds dangerous objects and areas (eg: steep, stony bank or unsafe structures).",
+                        "Playing zone to stop 2m short of walls, fences and boundaries to allow 'stopping' space."
+                    ]
+                },
+                {
+                    "hazard": "Roads and Traffic",
+                    "risks": [
+                        "Collision injury."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Game area and access to it away from traffic or roads.",
+                        "We will use the gated area next to our meeting place or the field next door.",
+                        "We will finish activities and return to our meeting place 15 minutes before the session ends so we don't interact with parents and carers arriving in cars."
+                    ]
+                },
+                {
+                    "hazard": "Large area",
+                    "risks": [
+                        "Young people out of sight",
+                        "Lost",
+                        "Injured",
+                        "Inappropriate behaviour"
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Playing zone clearly explained before each game is played.",
+                        "Players to remain in sight at all times",
+                        "Playing area restricted to main field, gates will be closed",
+                        "Regular head counts to be carried out, young people to be monitored and a 'let us know' toilet system in place."
+                    ]
+                },
+                {
+                    "hazard": "Weather",
+                    "risks": [
+                        "Inclement weather causing hypo/hyperthermia.",
+                        "Injury on wet ground."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "The leader will monitor the weather forcast in advance. If unsuitable weather forecast (eg. Heavy rain or extreme heat) alternative activity to be provided.",
+                        "Leader in charge to halt game if weather gets too wet/cold/hot.",
+                        "Appropriate clothing to be advised on and worn.",
+                        "Suitable footwear mandatory."
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "input": {
+            "location": "The scout hut is large brick building with a hard wooden floor and contains a small kitchen.",
+            "activity": "Cooking activities at Scout Hut.",
+            "n": 8
+        },
+        "output": {
+            "location": "Scout Hut",
+            "activity": "Indoor cooking",
+            "risks": [
+                {
+                    "hazard": "Tables and chairs (and other obstructions).",
+                    "risks": [
+                        "Injuries to participants or leaders setting up, moving, or collapsing the items."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Leaders and Young Leaders oversee and help with setting up and moving tables and chairs.",
+                        "No one carries tables alone - at least two people carry each table.",
+                        "Stack chairs facing side to the wall so they don't fall. Don't stack chairs more than four chairs high.",
+                        "Leaders set out tables and chairs at the start of the meeting (based on the planned activities), then push them against the walls until needed."
+                    ]
+                },
+                {
+                    "hazard": "Kitchen areas",
+                    "risks": [
+                        "Injuries, illness."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Food to be stored in an appropriate manner, even for short periods of time.",
+                        "All users to wash hands on entry to the kitchen, separate hand wash sink with soap/ paper towels in place.",
+                        "Young people not to enter kitchen, adults to bring food and equipment in and out OR young people to work in small groups with adult supervision",
+                        "Overcrowding to be avoided around hot surfaces/ovens and pans/dishes. Leader to direct movements of group.",
+                        "Kitchen hygiene system to be followed (eg: use of coloured chopping boards)."
+                    ]
+                },
+                {
+                    "hazard": "Cooking equipment",
+                    "risks": [
+                        "Is cooking equipment appropriate for the activity?",
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Check cooking equipment is in a hygeinic and generally good condition, appropriate for the planned activity, and is the right the size for everyone taking part.",
+                        "Leaders consider which parts of the activity need to be done by adults, or with close supervision.",
+                        "Make sure there's enough space between participants. Think about their location in the kitchen or main hall.",
+                        "Make sure there is good ventilation."
+                    ]
+                },
+                {
+                    "hazard": "Sharp items",
+                    "risks": [
+                        "Injuries from mistakes or misuse"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Leaders count out the sharp items and are clear on how many are being used. Leaders count sharp items back in to make sure that all are returned.",
+                        "Adults or Young Leaders supervise young people when they're using sharp items - at least one adult or Young Leader for each group.",
+                        "Leaders brief young people on using the sharp item safely before they use it.",
+                        "Adequate cutting boards provided."
+                    ]
+                },
+                {
+                    "hazard": "Heat sources",
+                    "risks": [
+                        "Burns from mistakes or misuse"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Adults or Young Leaders supervise young people when using hot items (such as ovens, stoves, candles, and fires) - at least one adult or Young Leader for each group.",
+                        "Use heat sources in a defined area to restrict access.",
+                        "Leaders brief young people on using the heat sources safely before they use them.",
+                        "Check HQ guidance on Safe use of Gas."
+                    ]
+                },
+                {
+                    "hazard": "Cables and electricity.",
+                    "risks": [
+                        "Trips",
+                        "Falls",
+                        "Electrocution from mistakes or misuse."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Use apliances close to sockets where possible.",
+                        "Cover and identify trailing cables where possible.",
+                        "No liquids near electrical items where possible.",
+                        "Leaders supervise use of electrical items."
+                    ]
+                },
+                {
+                    "hazard": "Behaviour",
+                    "risks": [
+                        "Overexcitement, especially at the start and end of the meeting."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Section code of conduct in place to set clear expectations of behaviour.",
+                        "Structure and outcomes of activity clearly explained at beginning."
+                    ]
+                },
+                {
+                    "hazard": "Individual Needs",
+                    "risks": [
+                        "Exclusion",
+                        "Injury"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Leader in charge to have considered individauls and made adjustments to make activity accessible.",
+                        "All adults aware of individuals with specific needs and any specific measures in place."
+                    ]
+                }
+            ]
+        }
+    }
+]
