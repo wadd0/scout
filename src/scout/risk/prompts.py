@@ -1,9 +1,12 @@
-from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
-from langchain_core.prompts import ChatPromptTemplate
-
+from langchain_core.prompts import (
+    ChatPromptTemplate,
+    SystemMessagePromptTemplate,
+    HumanMessagePromptTemplate,
+    MessagesPlaceholder,
+)
 
 system_prompt = """
-A scout leader planning an activity for Scouts (aged 10-14) needs to perform a
+A scout leader planning an activity for Scouts (aged 7-14) needs to perform a
 risk assessment for an activity at a given location.
 
 Your task is to perform a risk assessment identifying hazards and the risks
@@ -35,6 +38,8 @@ The following checklist is a good place to start when thinking about risks:
 - Visually inspect electrics - no bare wires or overloaded sockets.
 
 Use plain British english and commonly used terms in your response.
+
+Your tone should be formal.
 """
 
 user_prompt = """
@@ -42,13 +47,13 @@ Location: {location}
 
 Activity: {activity}
 
-Identify {n} risk(s). Rank them from highest impact to lowest impact.
+Identify {n_min} or more risk(s).
 """
 
 assessment_prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", system_prompt),
-        ("placeholder", "{examples}"),
-        ("human", user_prompt),
+        SystemMessagePromptTemplate.from_template(system_prompt),
+        MessagesPlaceholder(variable_name="examples"),
+        HumanMessagePromptTemplate.from_template(user_prompt),
     ]
 )

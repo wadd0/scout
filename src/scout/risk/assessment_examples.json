@@ -3,7 +3,7 @@
         "input": {
             "location": "The scout hut is large brick building with a hard wooden floor.",
             "activity": "Indoor active games.",
-            "n": 9
+            "n_min": 9
         },
         "output": {
             "location": "Scout Hut",
@@ -35,7 +35,7 @@
                     ],
                     "controls": [
                         "Store chairs and tables safely out of the way if possible, or move them to a safe area when playing a game.",
-                        "Work with Patrol Leaders/ Young Leaders to organise moving items at the beginning of the game.",
+                        "Work with Patrol Leaders to organise moving items at the beginning of the game.",
                         "Ensure everyone knows how to move heavy items safely."
                     ]
                 },
@@ -69,7 +69,7 @@
                         "Explain the rules clearly at the start of the game each time it is played.",
                         "Monitor the mood level throughout the game. Use a clear communication to stop the game - everyone should stop as soon as they hear two blasts on the whistle or anyone shouting stop.",
                         "Have a clear, unobstructing location for those not participating in the game.",
-                        "Ensure all of section is adequately supervised, both those YP playing and those not."
+                        "Ensure all of section is adequately supervised, both those young person playing and those not."
                     ]
                 },
                 {
@@ -137,7 +137,7 @@
         "input": {
             "location": "Large outdoor grassy space adjacent to a road and car park.",
             "activity": "Outdoor active games aka wide games.",
-            "n": 5
+            "n_min": 5
         },
         "output": {
             "location": "Outdoor grassy area",
@@ -208,7 +208,7 @@
                 {
                     "hazard": "Weather",
                     "risks": [
-                        "Inclement weather causing hypo/hyperthermia.",
+                        "Inclement weather causing hyoung persono/hyoung personerthermia.",
                         "Injury on wet ground."
                     ],
                     "affects": [
@@ -228,7 +228,7 @@
         "input": {
             "location": "The scout hut is large brick building with a hard wooden floor and contains a small kitchen.",
             "activity": "Cooking activities at Scout Hut.",
-            "n": 8
+            "n_min": 8
         },
         "output": {
             "location": "Scout Hut",
@@ -244,7 +244,7 @@
                         "Adult volunteers"
                     ],
                     "controls": [
-                        "Leaders and Young Leaders oversee and help with setting up and moving tables and chairs.",
+                        "Leaders oversee and help with setting up and moving tables and chairs.",
                         "No one carries tables alone - at least two people carry each table.",
                         "Stack chairs facing side to the wall so they don't fall. Don't stack chairs more than four chairs high.",
                         "Leaders set out tables and chairs at the start of the meeting (based on the planned activities), then push them against the walls until needed."
@@ -270,7 +270,7 @@
                 {
                     "hazard": "Cooking equipment",
                     "risks": [
-                        "Is cooking equipment appropriate for the activity?",
+                        "Is cooking equipment appropriate for the activity?"
                     ],
                     "affects": [
                         "Young people",
@@ -294,7 +294,7 @@
                     ],
                     "controls": [
                         "Leaders count out the sharp items and are clear on how many are being used. Leaders count sharp items back in to make sure that all are returned.",
-                        "Adults or Young Leaders supervise young people when they're using sharp items - at least one adult or Young Leader for each group.",
+                        "Adults supervise young people when they're using sharp items - at least one adult for each group.",
                         "Leaders brief young people on using the sharp item safely before they use it.",
                         "Adequate cutting boards provided."
                     ]
@@ -309,7 +309,7 @@
                         "Adult volunteers"
                     ],
                     "controls": [
-                        "Adults or Young Leaders supervise young people when using hot items (such as ovens, stoves, candles, and fires) - at least one adult or Young Leader for each group.",
+                        "Adults supervise young people when using hot items (such as ovens, stoves, candles, and fires) - at least one adult for each group.",
                         "Use heat sources in a defined area to restrict access.",
                         "Leaders brief young people on using the heat sources safely before they use them.",
                         "Check HQ guidance on Safe use of Gas."
@@ -360,6 +360,385 @@
                     "controls": [
                         "Leader in charge to have considered individauls and made adjustments to make activity accessible.",
                         "All adults aware of individuals with specific needs and any specific measures in place."
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "input": {
+            "location": "The scout hut is has a large hall with a hard wooden floor.",
+            "activity": "Indoor games.",
+            "n_min": 5
+        },
+        "output": {
+            "location": "Scout Hut",
+            "activity": "Indoor games",
+            "risks": [
+                {
+                    "hazard": "Objects being thrown.",
+                    "risks": [
+                        "Injuries to participants."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Safety instructions to be given before activity.",
+                        "No throwing balls/objects at head/face.",
+                        "No hard objects to be thrown.",
+                        "2 adult volunteers to superivse the game."
+                    ]
+                },
+                {
+                    "hazard": "Limbs/fingers ect being troden on during games.",
+                    "risks": [
+                        "Injuries."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Ensure that when rules of game are set out that young personsare advised to keep their fingers away from where feet may land.",
+                        "Have sufficient room between young people if jumping over legs.",
+                        "Legs to be kept straight if game involves jumping over legs",
+                        "2 adult volunteers to superivse the game."
+                    ]
+                },
+                {
+                    "hazard": "Whipping from rope.",
+                    "risks": [
+                        "Injuries"
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "2 adult volunteers to superivse the game."
+                    ]
+                },
+                {
+                    "hazard": "Blindfolded games/activities.",
+                    "risks": [
+                        "Injuries"
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Participants advised to walk only and not to run. Another participant to act as guide and stay with the blindfolded person.",
+                        "All phyiscal hazards to be removed or barriered off."
+                    ]
+                },
+                {
+                    "hazard": "Computer games",
+                    "risks": [
+                        "Danger from strangers online / inappropriate age."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Digital safety talk about stranger danger/grooming on line",
+                        "Ensure games being played are age appropriate.",
+                        "Adult supervision as appropriate of chat rooms if connected to games."
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "input": {
+            "location": "The scout hut is has a large hall with a hard wooden floor.",
+            "activity": "Section meeting.",
+            "n_min": 7
+        },
+        "output": {
+            "location": "Scout Hut",
+            "activity": "Section meeting",
+            "risks": [
+                {
+                    "hazard": "Floor",
+                    "risks": [
+                        "Slips",
+                        "Trips",
+                        "Falls"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Check floor is clear of obstacles and spills that are likely to increase risk of tripping, slipping, or injury.",
+                        "Have a wet floor sign to hand.",
+                        "Make sure everyone's wearing appropriate footwear and it's secured to their feet (check laces are tied and so on).",
+                        "Put a doormat at the entrance. Encourange everyone to wipe shoes on arrival, especially if wet."
+                    ]
+                },
+                {
+                    "hazard": "Traffic",
+                    "risks": [
+                        "injuries from collisions between vehicles and people."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Have clear signs in the car park and a marked, well lit walkway for pedestrians.",
+                        "Brief parents and carers on safe arrival and departure process.",
+                        "Leader supervises from the entrance to make sure young people arrive/depart the building safely."
+                    ]
+                },
+                {
+                    "hazard": "Behaviour",
+                    "risks": [
+                        "Overexcitement, especially at start and end of the evening."
+                    ],
+                    "affects": [
+                        "Young people"
+                    ],
+                    "controls": [
+                        "Have a section code of conduct to set clear expectations of behaviour.",
+                        "Leader orruns a filler planned activity for young people as they arrive to provide focus.",
+                        "Leader in charge monitors timings in the meeting to make sure activities flow from one to the next (and identify need for filler activities).",
+                        "A pre-arranged freeze signal is in place to use to halt any activity (ie: 2 whistle blasts)",
+                        "All adults aware of individuals with specific needs and alternative measures in place"
+                    ]
+                },
+                {
+                    "hazard": "Security",
+                    "risks": [
+                        "intruder access to the building",
+                        "Young person leaving unattended."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Adults follow group's arrangements for preventing unauthorised departure and access once all of the young people have arrived. These should not obstruct the fire evacuation arrangements.",
+                        "Have a clear waiting area for collection. Leaders tell young person when their parent or carer has arrived to collect them.",
+                        "Leaders carry mobile phones. Leader in charge has access to InTouch details in case of emergency.",
+                        "Clear communication between leaders and parents and carers so leaders know who's dropping off and picking up each young person."
+                    ]
+                },
+                {
+                    "hazard": "Kitchen",
+                    "risks": [
+                        "Injuries from heat sources",
+                        "Injuries from sharp items."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Limit access to the kitchen to adults only (unless part of a programmed activity).",
+                        "Scouts to access kitchen only after direct permission given",
+                        "Keep hot items, such as drinks, away from activity areas"
+                    ]
+                },
+                {
+                    "hazard": "Chemicals",
+                    "risks": [
+                        "injuries from misuse of cleaning materials."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Limit access to chemicals used for cleaning by locking away from (or putting out of reach of) young people.",
+                        "Adults supervise any use of cleaning chemicals, including washing up and so on.",
+                        "COSHH register to be kept in an accessible place for all chemicals"
+                    ]
+                },
+                {
+                    "hazard": "Fire",
+                    "risks": [
+                        "Injuries",
+                        "Death"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Adults check all fire exits and escape routes to make sure they're unlocked and clear before participants arrive.",
+                        "Leaders and Young Leaders know what to do in the event of a fire and where the emergency assembly point is.",
+                        "All rubbish tidied and cleared at the end of each session."
+                    ]
+                },
+                {
+                    "hazard": "Safeguarding, Appropriate Adults",
+                    "risks": [
+                        "Poor/inappropriate supervision of young personung person leading to injury, illness, upset"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "All leaders and helpers to complete appropriate personal checks and mandatory trainings within correct time frame.",
+                        "First Aider present at every meeting.",
+                        "Appropriate child:adult ratios in place at all times",
+                        "Consider if extra adult help is needed for specific young people in the group.",
+                        "Section Leader aware of any medical/additional needs and what support should be in place (eg: epi-pen, seat provided)"
+                    ]
+                },
+                {
+                    "hazard": "Infectious Diseases",
+                    "risks": [
+                        "Cross contamination, spread of infection"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Ill members advised not to attend if they may be infectious (eg: have been sick in the last 48hrs)",
+                        "Hand washing / sanitising equipment provided and used before eating, cooking.",
+                        "Young person reminded about good hand hygiene (eg: 'have you washed your hands?' if they have been to the toilet"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "input": {
+            "location": "The local urban area.",
+            "activity": "Activities outside the meeting place - town treasure hunt.",
+            "n_min": 5
+        },
+        "output": {
+            "location": "Local urban area.",
+            "activity": "Local treasure hunt",
+            "risks": [
+                {
+                    "hazard": "Roads and traffic",
+                    "risks": [
+                        "injuries from collisions between vehicles and people."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Choose a route with minimal use of roads without a footpath and avoiding busy main roads where possible",
+                        "Brief young people on safety around roads and expected behaviour.",
+                        "Be aware of suitable crossing places, make young people aware of them",
+                        "Adults directly supervise crossing if necessary (one on each side of the crossing point).",
+                        "Leaders at the front and back of the group wear hi-visibility jackets.",
+                        "Walk single file when on a road, on correct side of road for group size"
+                    ]
+                },
+                {
+                    "hazard": "Walking in busy areas, by roads, on pavements",
+                    "risks": [
+                        "Injury",
+                        "Lost child",
+                        "Negative interaction with public"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Brief young people on walking in a group and expected behaviour.",
+                        "Suitable footwear to be worn, Leaders to check before start.",
+                        "Leaders and helpers allotted to specific small group of young people.",
+                        "Group to follow the Highway Code and Green Cross Code.",
+                        "Lot child plan in place and all Leaders and helpers aware of it.",
+                        "Leaders and helpers to monitor pavement/ route for hazards (eg oncoming dog walker or protruding step) and alert/instruct young people around them.",
+                        "Group to walk, not run, in busy areas and by roads.",
+                        "If dark, Hi Vis to be worn by all participants and Torches to be used where there are no streetlights."
+                    ]
+                },
+                {
+                    "hazard": "Weather",
+                    "risks": [
+                        "Rain before and during the activity",
+                        "Hot weather causing heat exhaustion or sun stroke."
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "The leader will monitor the weather forecast in advance. If unsuitable weather (eg heavy rain or extreme heat) is forecast, we'll plan an alternative activity.",
+                        "Leaders will advise participants on suitable clothing to wear and carry (including sun protection and waterproofs). Everyone will bring a filled water bottle.",
+                        "Leaders will check that everyone's suitably equipped at the start of the meeting and have a few spare items available.",
+                        "Leaders will monitor young people and return to our meeting place if it gets too hot or the weather deteriorates."
+                    ]
+                },
+                {
+                    "hazard": "Behaviour",
+                    "risks": [
+                        "Inppropriate behaviour leading to accidents or anti-social incidents"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Clear expectations given to YP and section code of conduct to be followed",
+                        "Young people in small groups with adult support for interaction with public."
+                    ]
+                },
+                {
+                    "hazard": "Unfamiliar/Public Buildings",
+                    "risks": [
+                        "Lost child",
+                        "Accidents",
+                        "Imappropriate behaviour"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Adults pre-briefed about buildings to be entered. Shop/ Church/ building owners informed beforehand.",
+                        "Young people reminded of appropriate behaviour for building at entrance",
+                        "Leaders/ helpers to supervise each group",
+                        "Adults supervise any use of cleaning chemicals, including washing up and so on."
+                    ]
+                },
+                {
+                    "hazard": "Incidents",
+                    "risks": [
+                        "Poor Management leading to increased detrimental effects",
+                        "Injuries"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "Leader in charge known to participants.",
+                        "Designated First Aider. Suitable 1st Aid kit carried.",
+                        "Ensure robust In Touch system is in place.",
+                        "Leaders/helpers able to contact Leader in charge quickly.",
+                        "Purple cards issued to all leaders and helpers."
+                    ]
+                },
+                {
+                    "hazard": "Individual needs",
+                    "risks": [
+                        "Exclusion",
+                        "Upset",
+                        "Injury"
+                    ],
+                    "affects": [
+                        "Young people",
+                        "Adult volunteers"
+                    ],
+                    "controls": [
+                        "All abilities of group considered in planning. Careful consideration of entire route and it's suitability during planning phase.",
+                        "Young Person and parents consulted and specific plans put in place.",
+                        "Additional equipment may be needed and the use/ access of this considered.",
+                        "Adjustments for individuals (eg: Not having to wear a high vis) to be made."
                     ]
                 }
             ]

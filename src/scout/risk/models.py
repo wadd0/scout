@@ -10,7 +10,7 @@ class Risk(BaseModel):
 
     hazard: str = Field(
         description=(
-            "Sentence describing the hazard. "
+            "Descriptions of the hazard. "
             "A hazard is something that may cause harm or damage."
         )
     )
@@ -71,7 +71,7 @@ class RiskAssessmentHumanInput(BaseModel):
 
     activity: str = Field(description="Description of the activity.")
     location: str = Field(description="Description of the location.")
-    n: int = Field(description="Number of risks to return.")
+    n_min: int = Field(description="Minimum number of risks to return.")
 
 
 class ExampleRiskAssessment(BaseModel):
