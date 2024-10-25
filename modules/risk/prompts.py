@@ -1,9 +1,7 @@
-from langchain_core.prompts import (
-    ChatPromptTemplate,
-    SystemMessagePromptTemplate,
-    HumanMessagePromptTemplate,
-    MessagesPlaceholder,
-)
+from langchain_core.prompts import (ChatPromptTemplate,
+                                    HumanMessagePromptTemplate,
+                                    MessagesPlaceholder,
+                                    SystemMessagePromptTemplate)
 
 system_prompt = """
 A scout leader planning an activity for Scouts (aged 7-14) needs to perform a

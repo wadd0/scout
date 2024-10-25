@@ -1,5 +1,8 @@
 import hmac
+
 import streamlit as st
+
+from modules.risk.assessment import build_assessment_chain
 
 
 def check_password():
@@ -41,10 +44,34 @@ if not check_password():
     st.stop()
 
 # Main Streamlit app starts here
-st.write("Here goes your normal Streamlit app...")
-st.button("Click me")
-# st.write(st.secrets["OPENAI_API_KEY"])
 
-# Set up app, cache things that will not require restarting between reload
-# - examples
-# - database - file?
+st.image("assets/ukscout_linear.png", width=350)
+
+with st.form("my_form"):
+    st.write("Risk assessment")
+    activity = st.text_area(
+        label="Activity",
+        value=(
+            "Pumpkin carving with tee light candles. "
+            "Pumpkin carving will be done on tables in groups of 2, 2 groups per table."
+        ),
+        placeholder="Activity",
+    )
+    location = st.text_area(
+        label="Location",
+        value=(
+            "The Queens Hall is large brick building with a large room with a hard "
+            "wooden floor with stacked chairs around the perimeter."
+        ),
+        placeholder="Location",
+    )
+
+    # Every form must have a submit button.
+    submitted = st.form_submit_button("Submit")
+
+    if submitted:
+        with st.spinner("Generating..."):
+            result = f"**Activity:** {activity} \n\n **Location:** {location}"
+            risk_chain = build_assessment_chain()
+            risks = risk_chain.invoke({"activity": activity, "location": location})
+            st.markdown(risks.to_markdown())
