@@ -1,0 +1,17 @@
+[project]
+name = "scout"
+description = ""
+authors = [
+  {name = "Chris Wadsworth", email = "chrisjwadsworth@gmail.com"},
+]
+dynamic = ["version"]
+requires-python = ">= 3.8"
+dependencies = [
+    "typer==0.12.5"
+]
+
+[project.scripts]
+scout = "scout.cli:app"
+
+[tool.setuptools.dynamic]
+version = {attr = "scout.__version__"}
