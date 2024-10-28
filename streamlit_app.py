@@ -2,7 +2,7 @@ import hmac
 
 import streamlit as st
 
-from modules.risk.assessment import build_assessment_chain
+from risk.assessment import build_assessment_chain
 
 
 def check_password():
@@ -49,6 +49,7 @@ st.image("assets/ukscout_linear.png", width=350)
 
 with st.form("my_form"):
     st.write("Risk assessment")
+    st.write("TODO library of examples")
     activity = st.text_area(
         label="Activity",
         value=(
@@ -70,8 +71,38 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Submit")
 
     if submitted:
-        with st.spinner("Generating..."):
-            result = f"**Activity:** {activity} \n\n **Location:** {location}"
+        with st.status("Generating...", expanded=True) as status:
+            st.write("Getting examples...")
             risk_chain = build_assessment_chain()
+            st.write("Creating answer...")
             risks = risk_chain.invoke({"activity": activity, "location": location})
-            st.markdown(risks.to_markdown())
+            status.update(
+                label="Generation complete!",
+                state="complete",
+                expanded=False,
+            )
+        st.markdown(risks.to_markdown())
+
+
+# import streamlit as st
+# from langchain.llms import OpenAI
+
+# st.title("🦜🔗 Langchain Quickstart App")
+
+# with st.sidebar:
+#     openai_api_key = st.text_input("OpenAI API Key", type="password")
+#     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
+
+
+# def generate_response(input_text):
+#     llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
+#     st.info(llm(input_text))
+
+
+# with st.form("my_form"):
+#     text = st.text_area("Enter text:", "What are 3 key advice for learning how to code?")
+#     submitted = st.form_submit_button("Submit")
+#     if not openai_api_key:
+#         st.info("Please add your OpenAI API key to continue.")
+#     elif submitted:
+#         generate_response(text)
