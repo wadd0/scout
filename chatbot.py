@@ -1,16 +1,11 @@
 import streamlit as st
-import time
-from langchain_core.prompts import (
-    ChatPromptTemplate,
-    HumanMessagePromptTemplate,
-    MessagesPlaceholder,
-    SystemMessagePromptTemplate,
-)
-from langchain_community.callbacks import StreamlitCallbackHandler
-from langchain_core.runnables import RunnableConfig
-from langgraph.prebuilt import create_react_agent
-
+from langchain_core.prompts import (ChatPromptTemplate,
+                                    HumanMessagePromptTemplate,
+                                    MessagesPlaceholder,
+                                    SystemMessagePromptTemplate)
 from langchain_openai import ChatOpenAI
+
+from risk.assessment import build_assessment_chain
 
 llm = ChatOpenAI(
     model="gpt-4o-mini",
@@ -28,11 +23,6 @@ chat_prompt = ChatPromptTemplate.from_messages(
 )
 
 chain = chat_prompt | llm
-
-
-# agent_executor = create_react_agent(model, tools)
-
-# TODO create agent with tools to answer the question...
 
 st.title("Scout Assistant")
 
@@ -57,16 +47,28 @@ if prompt := st.chat_input("Ask me a question about Scouts"):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        st_cb = StreamlitCallbackHandler(st.container(), expand_new_thoughts=False)
-        cfg = RunnableConfig()
-        cfg["callbacks"] = [st_cb]
-        response = st.write_stream(
-            chain.stream(
-                {
-                    "messages": st.session_state.messages,
-                    "prompt": prompt,
-                    "config": cfg,
-                }
+        with st.spinner("Generating..."):
+            risk_chain = build_assessment_chain()
+            # response = st.write_stream(
+            response = st.write(
+                # risk_chain.stream(
+                risk_chain.invoke(
+                    {
+                        "activity": "Pumpkin carving",
+                        "location": "Scout hut",
+                    }
+                ).to_markdown()
             )
-        )
-        st.session_state.messages.append({"role": "assistant", "content": response})
+            st.session_state.messages.append({"role": "assistant", "content": response})
+            st.write("https://www.scouts.org.uk/por/")
+
+        # with st.spinner("Generating..."):
+        #     response = st.write_stream(
+        #         chain.stream(
+        #             {
+        #                 "messages": st.session_state.messages,
+        #                 "prompt": prompt,
+        #             }
+        #         )
+        #     )
+        #     st.session_state.messages.append({"role": "assistant", "content": response})

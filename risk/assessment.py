@@ -10,7 +10,7 @@ from .prompts import assessment_prompt, user_prompt
 
 def get_examples():
 
-    with open("modules/risk/assessment_examples.json") as f:
+    with open("risk/assessment_examples.json") as f:
         examples = json.load(f)
 
     examples = [
