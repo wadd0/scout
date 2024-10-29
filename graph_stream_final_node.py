@@ -13,8 +13,8 @@ import streamlit as st
 
 @tool
 def get_weather(city: Literal["nyc", "sf"]):
-    """Use this to get weather information."""
-    time.sleep(3)
+    """Use this to get weather information for a city."""
+    time.sleep(2)
     if city == "nyc":
         return "It might be cloudy in nyc"
     elif city == "sf":
@@ -25,12 +25,12 @@ def get_weather(city: Literal["nyc", "sf"]):
 
 tools = [get_weather]
 model = ChatOpenAI(
-    name="gpt-3.5-turbo",
+    name="gpt-4o-mini",
     temperature=0,
     api_key=st.secrets["OPENAI_API_KEY"],
 )
 final_model = ChatOpenAI(
-    name="gpt-3.5-turbo",
+    name="gpt-4o-mini",
     temperature=0,
     api_key=st.secrets["OPENAI_API_KEY"],
 )
@@ -93,9 +93,9 @@ builder.add_edge("final", END)
 graph = builder.compile()
 
 
-def stream_last_node():
+def stream_last_node(prompt):
     # TODO can I run a spinner until hitting the final node?
-    inputs = {"messages": [HumanMessage(content="what is the weather in sf")]}
+    inputs = {"messages": [HumanMessage(content=prompt)]}
     for msg, metadata in graph.stream(inputs, stream_mode="messages"):
         if (
             msg.content
@@ -118,6 +118,7 @@ if "messages" not in st.session_state:
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
+        st.empty()
 
 # Accept user input
 if prompt := st.chat_input("Ask me a question about Scouts"):
@@ -128,6 +129,10 @@ if prompt := st.chat_input("Ask me a question about Scouts"):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        with st.spinner("Generating..."):
-            response = st.write_stream(stream_last_node())
-            st.session_state.messages.append({"role": "assistant", "content": response})
+        with st.spinner("Answering your question..."):
+            response = st.write_stream(stream_last_node(prompt))
+            st.empty()
+        st.session_state.messages.append({"role": "assistant", "content": response})
+
+# https://discuss.streamlit.io/t/streamlit-spinner-and-chat-message-odd-interaction/82537
+# https://discuss.streamlit.io/t/ghost-double-text-bug/68765/6
