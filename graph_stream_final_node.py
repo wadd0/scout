@@ -121,7 +121,7 @@ for message in st.session_state.messages:
         st.empty()
 
 # Accept user input
-if prompt := st.chat_input("Ask me a question about Scouts"):
+if prompt := st.chat_input():
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
     # Display user message in chat message container
@@ -136,3 +136,4 @@ if prompt := st.chat_input("Ask me a question about Scouts"):
 
 # https://discuss.streamlit.io/t/streamlit-spinner-and-chat-message-odd-interaction/82537
 # https://discuss.streamlit.io/t/ghost-double-text-bug/68765/6
+# https://python.langchain.com/docs/how_to/streaming/#event-reference

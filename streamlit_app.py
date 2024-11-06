@@ -73,9 +73,6 @@ with st.form("my_form"):
     if submitted:
         with st.status("Generating...", expanded=True) as status:
             st.write("Getting examples...")
-            risk_chain = build_assessment_chain()
-            st.write("Creating answer...")
-            risks = risk_chain.invoke({"activity": activity, "location": location})
             status.update(
                 label="Generation complete!",
                 state="complete",
