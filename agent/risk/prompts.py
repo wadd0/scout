@@ -48,6 +48,8 @@ Activity: {activity}
 Identify {n_min} or more risk(s).
 """
 
+# TODO this should take into account the exisint context e.g. what risks have already been identified
+# for when a user says one more risk...
 assessment_prompt = ChatPromptTemplate.from_messages(
     [
         SystemMessagePromptTemplate.from_template(system_prompt),

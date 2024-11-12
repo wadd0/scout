@@ -1,8 +1,8 @@
-from typing_extensions import TypedDict
-from langgraph.graph import StateGraph, START, END
 from langchain_core.runnables import RunnableConfig
-from langgraph.checkpoint.memory import MemorySaver
 from langchain_openai import ChatOpenAI
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.graph import END, START, StateGraph
+from typing_extensions import TypedDict
 
 model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 

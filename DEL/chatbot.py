@@ -4,7 +4,6 @@ from langchain_core.prompts import (ChatPromptTemplate,
                                     MessagesPlaceholder,
                                     SystemMessagePromptTemplate)
 from langchain_openai import ChatOpenAI
-
 from risk.assessment import build_assessment_chain
 
 llm = ChatOpenAI(

@@ -1,7 +1,6 @@
 import hmac
 
 import streamlit as st
-
 from risk.assessment import build_assessment_chain
 
 

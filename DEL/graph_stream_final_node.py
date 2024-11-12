@@ -1,14 +1,13 @@
-from typing import Literal
 import time
+from typing import Literal
 
+import streamlit as st
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.tools import tool
 from langchain_openai import ChatOpenAI
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.message import MessagesState
 from langgraph.prebuilt import ToolNode
-
-import streamlit as st
 
 
 @tool

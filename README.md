@@ -3,6 +3,11 @@
 https://github.com/shiv248/Streamlit-x-LangGraph-Cookbooks
 
 
+## Loading spinners
+
+https://changelog.com/news/a-collection-of-free-svg-loading-spinners-AX0y
+
+
 ## Risk assessment
 
 Consult the general activities guidance https://www.scouts.org.uk/volunteers/running-your-section/programme-guidance/information-for-volunteers/general-activity-guidance/
